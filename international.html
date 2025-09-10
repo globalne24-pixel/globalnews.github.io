@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlobePulse News – International</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: #f4f6fa;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background: #002b5c;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1524059599548-5f9d8f4b5350') no-repeat center/cover;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    /* Featured News */
+    .featured {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .featured img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    .featured-content {
+      padding: 20px;
+    }
+    .featured-content h3 {
+      color: #002b5c;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+    .featured-content p {
+      color: #555;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+    .featured-content a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #002b5c;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .featured-content a:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    /* Other News */
+    .news-list {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .news-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .news-card h4 {
+      padding: 15px;
+      margin: 0;
+      color: #002b5c;
+      font-size: 1.2rem;
+    }
+    .news-card p {
+      padding: 0 15px 15px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .news-card a {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background: #002b5c;
+      color: #fff;
+      text-decoration: none;
+      border-top: 1px solid #eee;
+    }
+    .news-card a:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      background: #002b5c;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+
+<section class="hero">
+  <h2>International Headlines</h2>
+</section>
+
+<!-- Featured Big News -->
+<section class="featured">
+  <img src="https://images.unsplash.com/photo-1528747045269-390fe33c19d4" alt="Breaking News">
+  <div class="featured-content">
+    <h3>EU Pushes for Sanctions Over Middle East Conflict</h3>
+    <p>European leaders are moving towards imposing sanctions amid rising tensions in the Middle East following renewed airstrikes. Calls for peace talks continue to grow louder across the global stage.</p>
+    <a href="#">Read Full Story</a>
+  </div>
+</section>
+
+<!-- Other News Articles -->
+<section class="news-list">
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="News 1">
+    <h4>Lachlan Murdoch Takes Over Media Empire</h4>
+    <p>Rupert Murdoch officially hands over control to his son Lachlan, marking a major shift in global media power.</p>
+    <a href="#">Read More</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1503264116251-35a269479413" alt="News 2">
+    <h4>UN Security Council Meets Amid Crisis</h4>
+    <p>Urgent talks are underway at the UN Security Council as world leaders seek solutions to the escalating crisis.</p>
+    <a href="#">Read More</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1501630834273-4b5604d2ee31" alt="News 3">
+    <h4>Global Markets React to Oil Price Surge</h4>
+    <p>Crude oil prices spike as global tensions rise, sending shockwaves through international stock markets.</p>
+    <a href="#">Read More</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 GlobePulse News | International Section</p>
+</footer>
+
+</body>
+</html>

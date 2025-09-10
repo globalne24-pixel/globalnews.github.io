@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlobePulse News – Sports</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1505842465776-3d90f616310d') no-repeat center/cover;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    /* Featured + Sidebar */
+    .main-content {
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 25px;
+      padding: 0 20px;
+    }
+    .featured {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .featured img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    .featured-content {
+      padding: 20px;
+    }
+    .featured-content h3 {
+      color: #004080;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+    .featured-content p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .featured-content a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #004080;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .featured-content a:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    /* Sidebar - Scoreboard */
+    .sidebar {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .sidebar h4 {
+      margin-top: 0;
+      color: #004080;
+      font-size: 1.3rem;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+    .score {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .score:last-child {
+      border-bottom: none;
+    }
+    .score span {
+      font-weight: bold;
+    }
+
+    /* News Grid */
+    .news-grid {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .news-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    .news-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .news-card h4 {
+      padding: 15px;
+      margin: 0;
+      color: #004080;
+    }
+    .news-card p {
+      padding: 0 15px 15px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .news-card a {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background: #004080;
+      color: #fff;
+      text-decoration: none;
+      border-top: 1px solid #eee;
+    }
+    .news-card a:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    footer {
+      background: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+<section class="hero">
+  <h2>Sports Headlines</h2>
+</section>
+
+<!-- Featured + Sidebar -->
+<section class="main-content">
+  <!-- Featured Big News -->
+  <div class="featured">
+    <img src="https://images.unsplash.com/photo-1505842465776-3d90f616310d" alt="Sports News">
+    <div class="featured-content">
+      <h3>India Secures Thrilling Victory in Cricket Final</h3>
+      <p>In a nail-biting finish, India defeated their rivals by just 3 runs to lift the Asia Cup trophy.</p>
+      <a href="#">Read Full Story</a>
+    </div>
+  </div>
+
+  <!-- Sidebar Scoreboard -->
+  <div class="sidebar">
+    <h4>Latest Scores</h4>
+    <div class="score"><span>IND</span> 245/8 vs <span>PAK</span> 242/10</div>
+    <div class="score"><span>FC Barcelona</span> 3 - 2 <span>Real Madrid</span></div>
+    <div class="score"><span>US Open</span> Djokovic def. Nadal (6-4, 3-6, 6-3)</div>
+  </div>
+</section>
+
+<!-- More Sports News -->
+<section class="news-grid">
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2" alt="Football">
+    <h4>Premier League Upsets</h4>
+    <p>Underdogs shocked the football world with a stunning last-minute goal against the defending champions.</p>
+    <a href="#">Read More</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Tennis">
+    <h4>Grand Slam Glory</h4>
+    <p>Rising star makes history by clinching her first Grand Slam title at the age of 19.</p>
+    <a href="#">Read More</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1598188306155-12b42ed49f9b" alt="Basketball">
+    <h4>NBA Finals Heat Up</h4>
+    <p>Game 6 set to decide the fate of the NBA Championship after both teams are tied at 3-3.</p>
+    <a href="#">Read More</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 GlobePulse News | Sports Section</p>
+</footer>
+
+</body>
+</html>

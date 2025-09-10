@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlobePulse News – National</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background: #004d00;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1583241800514-7d79908d1bba') no-repeat center/cover;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    /* Featured + Sidebar */
+    .main-content {
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 25px;
+      padding: 0 20px;
+    }
+    .featured {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .featured img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    .featured-content {
+      padding: 20px;
+    }
+    .featured-content h3 {
+      color: #004d00;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+    .featured-content p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .featured-content a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #004d00;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .featured-content a:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .sidebar-article {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .sidebar-article img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+    .sidebar-article h4 {
+      padding: 10px;
+      margin: 0;
+      color: #004d00;
+      font-size: 1.1rem;
+    }
+
+    /* News Grid */
+    .news-grid {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .news-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    .news-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .news-card h4 {
+      padding: 15px;
+      margin: 0;
+      color: #004d00;
+    }
+    .news-card p {
+      padding: 0 15px 15px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .news-card a {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background: #004d00;
+      color: #fff;
+      text-decoration: none;
+      border-top: 1px solid #eee;
+    }
+    .news-card a:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    footer {
+      background: #004d00;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+<section class="hero">
+  <h2>National Headlines</h2>
+</section>
+
+<!-- Featured + Sidebar -->
+<section class="main-content">
+  <!-- Featured Big News -->
+  <div class="featured">
+    <img src="https://images.unsplash.com/photo-1529921879218-f8453e4d98ef" alt="National News">
+    <div class="featured-content">
+      <h3>Government Announces Major Infrastructure Push</h3>
+      <p>The central government unveils a $50 billion plan for new roads, railways, and smart cities to boost economic growth across the nation.</p>
+      <a href="#">Read Full Story</a>
+    </div>
+  </div>
+
+  <!-- Sidebar Small News -->
+  <div class="sidebar">
+    <div class="sidebar-article">
+      <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664" alt="Sidebar News">
+      <h4>Education Reforms Gain Momentum</h4>
+    </div>
+    <div class="sidebar-article">
+      <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64" alt="Sidebar News">
+      <h4>Healthcare Policy Expansion Announced</h4>
+    </div>
+  </div>
+</section>
+
+<!-- More National News -->
+<section class="news-grid">
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1529257414770-1960a7f9f6c2" alt="News 1">
+    <h4>National Security Talks in Parliament</h4>
+    <p>Lawmakers debate over new security policies to ensure safety amid rising global tensions.</p>
+    <a href="#">Read More</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1536305030431-2e8a6d56f8c3" alt="News 2">
+    <h4>Sports Infrastructure Boost</h4>
+    <p>Funding for sports facilities increased as the country prepares for upcoming international tournaments.</p>
+    <a href="#">Read More</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325" alt="News 3">
+    <h4>Technology Startups Rising</h4>
+    <p>National startup ecosystem sees record growth with new government incentives for entrepreneurs.</p>
+    <a href="#">Read More</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 GlobePulse News | National Section</p>
+</footer>
+
+</body>
+</html>
